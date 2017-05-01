@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- links, includes, etc -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> CheckPoint Fabrication</title>
+	<!-- Add custom font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:300,700" rel="stylesheet">
+	<!-- bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- css styling -->
+	<style>
+		body{
+			display: block;
+			margin:auto;
+			max-width: 900px;
+		}
+		h1,h2, h3, nav, form, .btn{
+			font-family: 'Open Sans', sans-serif;
+		}
+		p {
+			font-family: 'Open Sans', sans-serif;
+			color: #8A8A8D;
+		}
+		li strong {	
+			color: #0071CE;
+		}
+		#navLogo {
+			max-height: 50px;
+			padding: 5px;
+		}
+		#bodyLogo img{
+			display: block;
+			margin:auto;
+		}
+		input, textarea {
+			min-width: 200px;
+			max-width: 300px;
+			margin-bottom: 10px;
+			display:block;
+			margin-left:auto;
+			margin-right: auto;
+		}
+		.map {
+			padding-bottom: 20px;
+		}
+		#submitBtn {
+			max-width: 250px;
+			display:block;
+			margin-left:auto;
+			margin-right: auto;
+		}
+		.subtleLink {
+			color: #8A8A8D;
+		}
+	</style>
+	<!-- navigation bar -->
+	<section id="navbarSection">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                      
+					</button>
+					<img id="navLogo" src="CP_Fabrication_Logo_Large.png" class="img-responsive" alt="logo">
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#bodyLogo">ABOUT</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+						<li><a href="#map">LOCATION</a></li>
+					</ul>
+				</div>
+			</div>
+	</section>
+	<!-- page container for bootstrap -->
+	<div class="container-fluid">
+		<!-- cpfab logo with address and contact info -->
+		<section id="headerSection">
+			<div id="bodyLogo">
+				<img src="CP_Fabrication_Logo_Large.png" class="img-responsive" alt="logo" style="max-height:300px;">
+
+				<p class="text-center"> <a class="subtleLink" href="https://goo.gl/maps/Yt2EooBckbr" target="_blank">716 Barataria Blvd. | Marrero, LA 70072 </a> | <a class="subtleLink"href="tel:(504) 340-0770" target="_blank">(504) 340-0770</a></p>
+			</div>
+		</section>
+		<hr>
+		<!-- main page content. Description of the company. -->
+		<section id="contentSection">
+			<div id="content" class="text-center">
+				<!-- cpfab slogan -->
+				<div id="slogan">
+					<h2><strong>EXCELLENCE</strong> IS THE FRAMEWORK FOR EVERYTHING WE DO</h2>
+				</div>
+				<hr>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-5 push-md-7">
+						<section id="contact">
+							<div class="jumbotron container-fluid">
+								<h2 class="text-center"><strong>CONTACT US</strong></h3>
+								<form>
+									<div class="form-group" id="contctForm">
+										<!-- name -->
+
+										<input type="name" class="form-control" id="nameInput" placeholder="Name">
+										<!-- company -->
+
+										<input type="company" class="form-control" id="companyInput" placeholder="Company">
+										<!-- phone number -->
+
+										<input type="phoneNumber" class="form-control" id="phoneNumberInput" placeholder="Phone Number">
+										<!-- email address -->
+
+										<input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Email Address">
+										<!-- message -->
+										<textarea class="form-control" id="messageInput" rows="5" placeholder="Message"></textarea>
+										<input type="button" class="btn btn-primary" id="submitBtn" value="SUBMIT">
+									</div>
+								</form>
+							</div>
+					</div>
+					<div class="col-md-7 pull-md-5">
+						<div class="embed-responsive embed-responsive-4by3" id="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1729.414259271083!2d-90.10127165595858!3d29.898041340768405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a46f2f15d615%3A0x18b0c4e253870683!2s716+Barataria+Blvd%2C+Marrero%2C+LA+70072!5e0!3m2!1sen!2sus!4v1492886556127" width="600" height="450"frameborder="0" style="border:0" allowfullscreen class="embed-responsive-item"></iframe>
+						</div>
+					</div>
+					</section>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- send email button script -->
+<script>
+	window.onload = init;
+
+	function init() {
+		var button = document.getElementById("submitBtn");
+		button.onclick = sendMail;
+		console.log("buttonLoaded");
+	}
+	function sendMail()
+	{
+	    var name = document.getElementById("nameInput").value;
+	    var company = document.getElementById("companyInput").value;
+	    var phoneNumber = document.getElementById("phoneNumberInput").value;
+	    var email = document.getElementById("emailInput").value;
+	    var message = document.getElementById("messageInput").value;
+	    document.location.href = "mailto:makon@cppumps.com?subject=" + encodeURIComponent("CPFabrication.com Message") + "&body=" + "Name: " + name + "%0D%0A" + "Company: " + company + "%0D%0A" + "Phone Number: " + phoneNumber + "%0D%0A" + "Email: " + email + "%0D%0A" + "Message: " + message ;
+	}
+</script>
+</body>
+</html>
+

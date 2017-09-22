@@ -51,7 +51,6 @@
 			margin-right: auto;
 		}
 		.jumbotron {
-			min-width: 250px;
 			max-width: 400px;
 			display:block;
 			margin-left:auto;
@@ -72,6 +71,13 @@
 		.subtleLink {
 			color: #8A8A8D;
 		}
+		#wrap {
+			text-align: center;
+		}
+		#content {
+			text-align: left;
+
+		}
 	</style>
 	<!-- navigation bar -->
 	<section id="navbarSection">
@@ -83,7 +89,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>                      
 					</button>
-					<a href="#"><img id="navLogo" src="CP_Fabrication_Logo_Large.png" class="img-responsive" alt="CheckPoint Fabrication"></a>
+					<img id="navLogo" src="CP_Fabrication_Logo_Large.png" class="img-responsive" alt="logo">
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
@@ -99,7 +105,7 @@
 		<!-- cpfab logo with address and contact info -->
 		<section id="headerSection">
 			<div id="bodyLogo">
-				<img src="CP_Fabrication_Logo_Large.png" class="img-responsive" alt="CheckPoint Fabrication" style="max-height:300px;">
+				<img src="CP_Fabrication_Logo_Large.png" class="img-responsive" alt="logo" style="max-height:300px;">
 
 				<p class="text-center"> <a class="subtleLink" href="https://goo.gl/maps/Yt2EooBckbr" target="_blank">716 Barataria Blvd. | Marrero, LA 70072 </a> | <a class="subtleLink"href="tel:(504) 340-0770" target="_blank">(504) 340-0770</a></p>
 			</div>
@@ -111,6 +117,105 @@
 				<!-- cpfab slogan -->
 				<div id="slogan">
 					<h2><strong>EXCELLENCE</strong> IS THE FRAMEWORK FOR EVERYTHING WE DO</h2>
+				</div>
+				<hr>
+
+				<div id="about" id="wrap">
+					<div class="row">
+						<div class="col-md-6 cos-xs-12 container-fluid" id="content">
+							<h2> A FULL SERVICE WELDING AND METAL FABRICATION COMPANY</h3>
+							<p style="color: black"> CheckPoint Fabrication is a leading provider of welding, shearing, forming, punching, and other metal fabrication services in the New Orleans, LA area. With over 25 years of history, we have the experience and equipment to handle any job requiring welding and metal fabrication services.
+							We are well experienced in the fabrication of stainless steel, aluminum, and mild steel. We also fabricate structural steel and miscelaneous metal items including pan stairs, guardrails, and handrails.</p>
+						</div>
+						<div class="col-md-6 col-xs-12 container" id="content">
+							<div class="row">
+								<div class="col-xs-12 col-md-12" >
+									<h2> PRODUCTS AND SERVICES</h2>
+								</div>
+							</div>
+							<div class="row" >
+								<div class="col-md-6 col-xs-6">
+									<ul>
+										<li>Welding</li>
+										<ul>
+											<li>Stainless steel</li>
+											<li>Aluminum</li>
+											<li>Carbon steel</li>
+										</ul>	
+										<li>Shearing</li>
+										<li>Bending</li>
+										<li>Punching</li>
+										<li>Sawing</li>
+										<li>Metal fabrication</li>
+										<li>Repair</li>
+										<li> 3D CAD modeling</li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-xs-6">
+									<ul>
+										<li>Metal frames</li>
+										<li>Sheet metal enclosures</li>
+										<li>Cargo baskets</li>
+										<li>Metal fences and gates</li>
+										<li>Stairs and landings</li>
+										<li>Guardrails and handrails</li>
+										<li>Metal signs</li>
+										<li>Metal furniture</li>
+										<li>Miscelaneous metal items</li>
+										<li>Fabrication drawings/ detail drawings</li>
+									</ul>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-6 col-xs-12" id="content">
+							<h2>EQUIPMENT</h2>
+							<ul>
+								<li> Uni-Hydro 66-24 Iron Worker </li>
+									<ul>
+										<li>66 ton capacity</li>
+									</ul>
+								<li> Masteel MBHSA-12500 Sheer</li>
+									<ul>
+										<li>500 ton capacity</li>
+										<li>up to 1/2" material thickness (carbon steel)</li>
+										<li>12' max length</li>
+									</ul>
+								<li>Masteel TP 700 Brake</li>
+									<ul>
+										<li>280 ton capacity</li>
+										<li>up to 3/8" material capacity (carbon steel)</li>
+										<li>10' max length</li>
+									</ul>
+								<li>KMT C 3700 SA-V Cold Saw</li>
+									<ul>
+										<li>up to 4 1/2" round</li>
+										<li>up to 4" square/rectangular</li>
+									</ul>
+								<li>Vectrax CL Series Milling Machine </li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-xs-12" id="content">
+							<h2>IN-HOUSE COMPUTER-AIDED DESIGN (CAD) SERVICE</h2>
+								<ul>
+									<li>We turn your loose ideas into working 3D models</li>
+									<li>See a 3D model of your part before fabrication</li>
+									<li>Fully detailed fabrication drawings / shop drawings</li>
+									<li>Installation and erection drawings</li>
+									<li>Material parts lists</li>
+									<li>Weld details</li>
+								</ul>
+							<h2>METAL SALES</h2>
+								<ul>
+									<li>Stainless steel, aluminum, carbon steel, alloy</li>
+									<li>Sheet, plate, bar, pipe, angle, tube, channel</li>
+									<li>Cut to any length, with no minimum quantity</li>
+								</ul>
+
+						</div>
+					</div>
 				</div>
 				<hr>
 
@@ -172,16 +277,6 @@
 	    var message = document.getElementById("messageInput").value;
 	    document.location.href = "mailto:makon@cppumps.com?subject=" + encodeURIComponent("CPFabrication.com Message") + "&body=" + "Name: " + name + "%0D%0A" + "Company: " + company + "%0D%0A" + "Phone Number: " + phoneNumber + "%0D%0A" + "Email: " + email + "%0D%0A" + "Message: " + message ;
 	}
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-98337555-1', 'auto');
-  ga('send', 'pageview');
-
 </script>
 </body>
 </html>
